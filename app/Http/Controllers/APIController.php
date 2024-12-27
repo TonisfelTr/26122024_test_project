@@ -23,6 +23,7 @@ class APIController extends Controller
             'user_id' => auth()->id(),
             'new_value' => $request->new_value,
             'method' => $request->method,
+            // Генерация кода
             'confirmation_code' => rand(100000, 999999),
         ]);
 
@@ -73,6 +74,7 @@ class APIController extends Controller
             'user_id' => auth()->id(),
             'new_value' => $request->new_value,
             'method' => $request->method,
+            // Генерация кода
             'confirmation_code' => rand(100000, 999999),
         ]);
 
